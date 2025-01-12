@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estevan Castro | Ingeniero DevOps</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/variables.css">
-    <link rel="stylesheet" href="/assets/css/layout.css">
-    <link rel="stylesheet" href="/assets/css/typography.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Catálogo de Accesorios</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header class="header">
+        <h1 class="logo">Accesorios Premium</h1>
+        <p class="tagline">Todo lo que necesitas para tu dispositivo</p>
+    </header>
 
-    {% include header.html %}  <!-- Esto debe funcionar correctamente -->
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>¡Hola a todos, soy Estevan <span class="hand-wave">👋</span>!</h1>
-            <p>
-                Ingeniero DevOps especializado en automatización de despliegues y orquestación de infraestructura utilizando 
-                tecnologías como Docker, Kubernetes y Jenkins. Me dedico a optimizar procesos y crear entornos eficientes, 
-                enfocados en la escalabilidad y la mejora continua.
-            </p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn">Contáctame</a>
-                <a href="/assets/documents/CV_Estevan_Castro.pdf" download class="btn">Descargar mi Currículum</a>
+    <main class="catalogo">
+        <section class="categoria">
+            <div class="card">
+                <img src="images/iphone-accessories.jpg" alt="Accesorios para iPhone">
+                <h2>Accesorios para iPhone</h2>
+                <p>Encuentra fundas, cargadores y más diseñados exclusivamente para iPhone.</p>
+                <a href="iphone.html" class="boton">Ver más</a>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="/assets/images/logo.svg" alt="Ilustración DevOps">
-        </div>
-    </section>
+            <div class="card">
+                <img src="images/android-accessories.jpg" alt="Accesorios para Android">
+                <h2>Accesorios para Android</h2>
+                <p>Explora nuestra colección de accesorios compatibles con dispositivos Android.</p>
+                <a href="android.html" class="boton">Ver más</a>
+            </div>
+        </section>
+    </main>
 
-    {% include footer.html %}  <!-- Esto debe funcionar correctamente -->
-
+    <footer class="footer">
+        <p>&copy; 2025 Accesorios Premium - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
